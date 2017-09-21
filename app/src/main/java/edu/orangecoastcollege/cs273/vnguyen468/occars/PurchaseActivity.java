@@ -48,7 +48,14 @@ public class PurchaseActivity extends AppCompatActivity {
     protected void reportSummary(View v)
     {
         collectCarLoanData();
-        String report = "Monthly Payment: $" + mCarLoan.monthlyPayment();
+        String report = "Monthly Payment: $" + mCarLoan.monthlyPayment() + "\n\n"
+                + "Car Sticker Price: $" + mCarLoan.getPrice() + "\n"
+                + "You will put down: $" + mCarLoan.getDownPayment() + "\n"
+                + "Taxed Amt: $        " + mCarLoan.taxAmount() + "\n"
+                + "Your Cost: $        " + mCarLoan.totalAmount() + "\n"
+                + "Borrowed Amount:    " + mCarLoan.borrowedAmount() + "\n"
+                + "Interest Amount:    " + mCarLoan.interestAmount() + "\n\n"
+                + " Loan term is " + mCarLoan.getLoanTerm() + "years." + "\n\n";
         //Keep going for report.
 
         //Intents start new activities and can share data with them.
