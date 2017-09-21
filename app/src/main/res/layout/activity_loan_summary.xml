@@ -39,15 +39,6 @@
         android:layout_marginTop="24dp"
         android:text="TextView"/>
 
-    <TextView
-        android:id="@+id/loanReportTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/monthlyPaymentTextView"
-        android:layout_alignStart="@+id/monthlyPaymentTextView"
-        android:layout_centerVertical="true"
-        android:text="TextView"/>
-
     <Button
         android:id="@+id/returnToDataButton"
         android:layout_width="wrap_content"

@@ -23,6 +23,6 @@ public class LoanSummaryActivity extends AppCompatActivity {
         String report = intentFromPurchase.getStringExtra("loanReport");
 
         //Fill your TextView with data from the report.
-        loanReportTextView.setText(report.toString());
+        loanReportTextView.setText(report);
     }
 }
