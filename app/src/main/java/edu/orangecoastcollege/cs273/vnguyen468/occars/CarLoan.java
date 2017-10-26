@@ -53,6 +53,12 @@ public class CarLoan {
         return mPrice - mDownPayment;
     }
 
+    /**
+    * This method calculates the interest rate
+    * based on the term that that has been selected 
+    * @ return the selected interest rate times the 
+    * amount that has been borrowed 
+    */
     public double interestAmount() {
         /*
             3 year APR = 4.62%
